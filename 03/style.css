@@ -1,0 +1,115 @@
+body{
+    background-color: black;
+}
+h3{
+    /* ctl +/ */
+    font-size: 30px;
+    color: #2ba6e2;
+    padding: 50px;
+    border: 2px solid white;
+    background-color:rgba(2, 91, 64, 0.561);
+    /* 0-1 */
+}
+/* h1{
+    color:yellow;
+} */
+
+h3{
+    /* ctl +/ */
+    /* font-size: 30px; */
+    color: rgb(2, 91, 64);
+    padding: 150px;
+    border: 2px solid rgb(222, 7, 7);
+}
+p{
+    color: white;
+}
+body div span{
+    color: blue;
+}
+p span{
+    color:lightcoral;
+}
+
+span{
+    color: orange;
+}
+*{
+    /* text-decoration: underline; */
+}
+/* h4{
+    color: lawngreen;
+}
+h5{
+    color: lawngreen;
+} */
+
+/* DRY don't repeat  yourself */
+
+h4,h5,h6{
+    color: lawngreen;
+    border: 3px solid lawngreen;
+}
+h4{
+    padding: 10px;
+}
+h5{
+    background-color: lightskyblue;
+}
+h6{
+    font-size: 25px;
+}
+#top{
+    background-color: yellowgreen;
+}
+.uppercase-text{
+    text-transform: uppercase;
+}
+.food-item{
+    border: 2px solid black;
+    background-color: white;
+    /* padding: 20px; */
+    /* padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-left: 75px; */
+    /* padding: 20px 50px 100px 80px; */
+    padding: 20px 100px;
+    /* margin-bottom: 10px; */
+    /* margin: 40px; */
+    margin-bottom: 80px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0 auto;
+}
+.food-item h3{
+    font-size: 20px;
+    color: black;
+    border: none;
+    padding: 0;
+}
+.food-item p{
+    font-size: 16px;
+    color: gray;
+}
+.food-item.promotion{
+    background-color: yellow;
+}
+.food-item.special h3{
+    background-color: palevioletred;
+}
+
+ul li{
+    color: white;
+}
+ul li:first-child{
+    background-color: yellow;
+}
+ul li:last-child{
+    background-color: rgb(13, 96, 220);
+}
+ul li:nth-child(2){
+    background-color: antiquewhite;
+}
