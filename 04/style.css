@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+h1{
+    /* text-align: center; */
+    text-align: right;
+    font-weight: 400;
+}
+p{
+    font-weight: 500;
+}
+span{
+    font-weight: 600;
+}
+section{
+    text-align: center;
+    width: 1000px;
+    background-color: tomato;
+    margin: 0 auto;
+    padding: 200px;
+    box-sizing: border-box;
+    height: 1000px;
+}
+a{
+    display: inline-block;
+}
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    background-color: gray;
+    /* font-size: 0; */
+}
+.logo, 
+nav{
+    display: inline-block;
+    width: 400px;
+    /* font-size: 20px; */
+}
+nav{
+    margin-left: -4px;
+}
+nav a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+nav:hover p{
+    color: yellow;
+}
+/* .food-item:hover .food-item-img{
+
+}
+.food-item:hover p{
+
+} */
