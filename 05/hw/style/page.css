@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.heaedr-wrapper{
+    width: 937px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.text-wrapper{
+    width: 937px;
+    margin: 0 auto;
+}
+header{
+    padding: 65px 0 60px 0;
+}
+.social{
+    display: flex;
+}
