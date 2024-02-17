@@ -1,0 +1,14 @@
+h1{
+    font-size: 100px;
+    padding: 30px;
+}
+h1 i{
+    font-size: 140px;
+    color: orange;
+}
+h1:hover{
+    background-color: lightblue;
+}
+h1:hover i{
+    color: white;
+}

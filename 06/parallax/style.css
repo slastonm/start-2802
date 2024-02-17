@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+main{
+    padding-top: 200px;
+    min-height: 100%;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header,
+section{
+    background-color: gray;
+    color: white;
+    padding: 100px;
+    margin-bottom: 250px;
+}
+section:last-child{
+    margin-bottom: 0;
+}

@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.simple-bg{
+    width: 1520px;
+    /* font-size: 40px; */
+    height: 520px;
+    padding: 100px;
+    text-align: center;
+    color: green;
+    background-color: yellow;
+    /* background-image: url('../img/1.webp'); */
+    /* background-image: url('../img/avatar.png'); */
+    background-image: url('../img/avatar.png'), url('../img/1.webp');
+
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-size: 250px; */
+    /* background-size: 50%; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-position: center; 
+    background-position: center bottom; 
+    background-position: center top;
+    background-position: right top;  */
+    /* background-position: left bottom;  */
+    /* background-position: left 250px bottom 50px;  */
+
+    
+
+
+
+}
+.simple-bg:hover{
+    background-color: red;
+}
+.buttons{
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+}
+.fb{
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/sprite-icon-29.jpg');
+    background-position: left -10px top -12px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid darkblue;
+    background-color: white;
+}
+.fb:hover{
+    background-color: lightskyblue;
+    background-position: left -10px top -96px;
+}
+.fb.disabled{
+    background-position: left -10px top -180px;
+}
