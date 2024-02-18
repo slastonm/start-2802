@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+main{
+    /* width: 1600px; */
+    /* max-width: 1600px; */
+    /* max-width: 1600px; */
+    /* min-width: 350px; */
+    padding: 50px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1600px) {
+    main{
+        background-color: green;
+        border: 10px solid black;
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px) {
+    main{
+        background-color: rgb(57, 240, 57);
+        border: 10px solid rgb(227, 50, 50);
+        width: 50%;
+    }
+}
+
+@media (max-width:400px){
+    main{
+        background-color: rgb(7, 21, 7);
+        border: 10px solid rgb(227, 50, 50);
+        width: 90%;
+    }
+}
