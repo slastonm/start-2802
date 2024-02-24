@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+main{
+    background-color: yellow;
+    color: blue;
+    text-align: center;
+    padding: 200px 50px;
+    font-size: 35px;
+}
+
+/* @media (min-width:1200px){
+    main{
+        background-color: rgb(7, 21, 7);
+        border: 10px solid rgb(227, 50, 50);
+        width: 90%;
+        margin: 0 auto;
+        color: red;
+    }
+}
+
+@media (min-width:1600px){
+    main{
+        background-color: rgb(5, 180, 5);
+        border: 10px solid rgb(33, 2, 2);
+        width: 90%;
+        margin: 0 auto;
+        color: rgb(20, 12, 12);
+    }
+} */
+
+/* @media screen and (min-width:480px) and (max-width:1080px){
+    main{
+        background-color: rgb(5, 180, 5);
+        border: 10px solid rgb(33, 2, 2);
+        width: 90%;
+        margin: 0 auto;
+        color: rgb(20, 12, 12);
+    }
+    main::before{
+        content: "Ipad";
+    }
+} */
+
+@media (480px <= width <= 1080px){
+    main{
+        background-color: rgb(5, 180, 5);
+        border: 10px solid rgb(33, 2, 2);
+        width: 90%;
+        margin: 0 auto;
+        color: rgb(20, 12, 12);
+    }
+    main::before{
+        content: "Ipad";
+    }
+}
+
+@media print{
+    main{
+        border: none;
+        font-size: 14px;
+        color: gray;
+    }
+    .print{
+        display: none;
+    }
+}
+
+/* @media(min-aspect-ratio: 19.5/9){
+
+}
+@media(max-aspect-ratio: 19.5/9){
+    
+} */
+
+body,html{
+    font-size: 20px;
+}
+/* em = 5em * fonts-size */
+/* p{
+    background-color: gray;
+    padding: 5em;
+    font-size: 15px;
+}
+
+@media(min-width:1200px){
+    body,html{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+} */
+
+/* rem */
+/* rem = 5rem * fonts-size-body-html */
+p{
+    background-color: gray;
+    padding: 5rem;
+    font-size: 15px;
+}
+
+@media(min-width:1200px){
+    body,html{
+        font-size: 40px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+} 
+
+/* vw vh */
+.wrapper{
+    /* height: 100vh; */
+    min-height: 100vh;
+    background-color: rgba(255, 166, 0, 0.444);
+    font-size: 1rem;
+    width: 60vw;
+    /* width: 50%; */
+
+}
+.wrapper-container{
+    /* width: 60%; */
+    width: 50vw;
+    margin: 0 auto;
+    border: 3px solid black;
+}
