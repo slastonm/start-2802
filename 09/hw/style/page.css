@@ -1,0 +1,16 @@
+:root{
+    --main-bg:rgb(245, 245, 245);
+    --main-font-family:"Inter", sans-serif;
+    --font-size-base:14px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--main-font-family);
+    background-color: var(--main-bg);
+    font-size: var(--font-size-base);
+}
+.portfolio-item{
+    display: grid;
+}

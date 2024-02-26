@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+@keyframes simple{
+    from{
+        background-color: blue;
+        border-radius: 0;
+        left: 0;
+    }
+    to{
+        background-color: yellow;
+        border-radius: 30px;
+        left: 500px;
+    }
+}
+@keyframes pro{
+    0%{
+        background-color: blue;
+        border-radius: 0;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: rgb(92, 111, 206);
+        left: 0;
+        top: 250px;
+        border-radius: 5px;
+    }
+    50%{
+        background-color: rgb(185, 192, 229);
+        left: 250px;
+        top: 250px;
+        border-radius: 15px;
+
+    }
+    50%{
+        background-color: rgb(185, 192, 229);
+        left: 450px;
+        top: 150px;
+        border-radius: 25px;
+
+    }
+    75%{
+        background-color: rgb(251, 251, 251);
+        left: 450px;
+        top: 100px;
+        border-radius: 28px;
+
+    }
+    80%{
+        background-color: rgb(217, 160, 3);
+        left: 450px;
+        top: 50px;
+        border-radius: 29px;
+    }
+    90%{
+        background-color: rgb(217, 92, 3);
+        left: 480px;
+        top: 10px;
+        border-radius: 29px;
+    }
+    100%{
+        background-color: blue;
+        border-radius: 0;
+        left: 500px;
+        top: 0;
+        border-radius: 30px;
+    }
+}
+
+.simple-animation{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 500px;
+    border-radius: 30px;
+    background-color: yellow;
+    /* animation-name: simple; */
+    animation-name: pro;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.simple-animation.second{
+    animation-delay: 5s;
+    /* animation-iteration-count: 3; */
+    animation-direction: reverse;
+}
+
+@keyframes move {
+    from{
+        left: 0;
+    }
+    to{
+        left: 1500px;
+    }
+}
+.animation>div{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.linear{
+    animation-timing-function: linear;
+}
+.ease{
+    animation-timing-function: ease;
+}
+.ease-in{
+    animation-timing-function: ease-in;
+}
+.ease-out{
+    animation-timing-function: ease-out;
+}
+.ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+.custom{
+    animation-timing-function: cubic-bezier(1,0,.47,.25);
+}
+/* 
+.short{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+} */
