@@ -1,0 +1,80 @@
+.tranform{
+    display: inline-block;
+    padding: 20px 40px;
+    margin-right: 50px;
+    margin-top: 150px;
+    background-color: red;
+    border: 3px solid black;
+    color: white;
+    transition: all 2s;
+}
+.tranform:hover{
+    /* transition: all 5s; */
+    background-color: white;
+    color: black;
+}
+.rotate:hover{
+    /* transform: rotate(145deg); */
+    /* transform: rotate(-45deg); */
+    rotate: 90deg;
+}
+
+.scale:hover{
+    /* transform: scale(2); */
+    /* padding: 40px 80px; */
+    /* scale: 0.3; */
+    /* scale: 1.5 0.5; */
+    scale: 1.1;
+    /* font-size: 24px; */
+}
+.skew:hover{
+    /* transform: skew(-20deg, 0); */
+    transform: skew(0, -45deg);
+}
+.move:hover{
+    transform: translate(50px, 100px);
+}
+.all:hover{
+    transform: translate(5px, 5px) scale(1.3) rotate(20deg);
+}
+
+.hover-block{
+    width: 25%;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 5px solid green;
+    position: relative;
+    transition: all 2s;
+}
+.hover-block img{
+    width: 100%;
+    transition: all 2s ease-in;
+}
+.hover-block:hover{
+    border: 5px solid rgb(3, 68, 3);
+}
+.hover-block:hover img{
+    transform: rotate(5deg) scale(1.2);
+}
+.title{
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 2s linear;
+    left: -1000px;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.hover-block:hover .title{
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.tranform:hover .icon-element{
+  fill: black; 
+  stroke: gold;
+  stroke-width: 2px;
+  transform: rotate(5deg) scale(1.2);
+}
